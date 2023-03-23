@@ -1,7 +1,9 @@
 def pascal_triangle(n):
-    """ pascal triangle 
-    Args: 
-        n = int
+    """generates a pascal triangle
+    Args:
+        n (int): number of rows
+    Returns:
+        list(list(int)): list of lists of integers
     """
     triangle = list()
     if n > 0:
@@ -13,4 +15,3 @@ def pascal_triangle(n):
                                1)
             triangle.append(row)
     return triangle
-
