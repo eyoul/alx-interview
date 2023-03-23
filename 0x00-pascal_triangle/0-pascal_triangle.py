@@ -1,28 +1,27 @@
 #!/usr/bin/python3
-"""generates a pascal triangle"""
+"""Pascal Triangle Interview Challenge"""
+
 
 def pascal_triangle(n):
-
-    """
-    Returns:
-        list(list(int)): list of lists of integers
-    """
+    """returns a list of lists of numbers
+    representing the pascal triangle"""
     if n <= 0:
         return []
-    
+
     pascal_triangle = [0] * n
 
     for i in range(n):
-        new = [0] * (i + 1)
-        new[0] = 1
-        new[len(new) - 1] = 1
+        # define a row and fill first and last idx with 1
+        new_row = [0] * (i+1)
+        new_row[0] = 1
+        new_row[len(new_row) - 1] = 1
 
-        for j in range (1, i):
-            if j > 0 and j < len(new):
-                x = pascal_triangle[i - 1][j]
-                y = pascal_triangle[i - 1][j - 1]
-                new[j] = x + y
+        for j in range(1, i):
+            if j > 0 and j < len(new_row):
+                a = pascal_triangle[i - 1][j]
+                b = pascal_triangle[i - 1][j - 1]
+                new_row[j] = a + b
 
-        pascal_triangle[i] = new
+        pascal_triangle[i] = new_row
 
     return pascal_triangle
