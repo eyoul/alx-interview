@@ -12,9 +12,7 @@ def rotate_2d_matrix(matrix):
     for i in range(n):
         matrix[i] = matrix[i][::-1]
 
-matrix = [[1, 2, 3],
-          [4, 5, 6],
-          [7, 8, 9]]
+matrix = []
 
 rotate_2d_matrix(matrix)
 print(matrix)
