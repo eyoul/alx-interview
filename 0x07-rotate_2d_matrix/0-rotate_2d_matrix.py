@@ -2,6 +2,8 @@
 """
 Test 0x07 - Rotate 2D Matrix
 """
+
+
 def rotate_2d_matrix(matrix):
     n = len(matrix)
     # Transpose the matrix
@@ -11,6 +13,7 @@ def rotate_2d_matrix(matrix):
     # Reverse each row
     for i in range(n):
         matrix[i] = matrix[i][::-1]
+
 
 rotate_2d_matrix(matrix)
 print(matrix)
