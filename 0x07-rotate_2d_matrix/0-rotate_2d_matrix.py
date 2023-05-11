@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """
-Test 0x07 - Rotate 2D Matrix
+Define a function that rotates an nxn 2D matrix 90 degrees clockwise in-place
 """
 
 
 def rotate_2d_matrix(matrix):
     """
-    Ritate a 2d square matrix 90 degrees
+    Rotate a 2d square matrix 90 degrees clockwise in-place
     Args:
-        matrix (list): 2d square
-    Return: 
+        matrix (list): 2d square matrix
+    Return:
         None
     """
     n = len(matrix)
