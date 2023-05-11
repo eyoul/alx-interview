@@ -9,7 +9,7 @@ def rotate_2d_matrix(matrix):
     Ritate a 2d square matrix 90 degrees
     Args:
         matrix (list): 2d square
-    Return: 
+    Return:
         None
     """
     n = len(matrix)
