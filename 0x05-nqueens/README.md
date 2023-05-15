@@ -27,3 +27,7 @@ julien@ubuntu:~/0x08. N Queens$ ./0-nqueens.py 6
 [[0, 4], [1, 2], [2, 0], [3, 5], [4, 3], [5, 1]]
 julien@ubuntu:~/0x08. N Queens$
 ```
+* File: [0-nqueens.py](./0-nqueens.py)
+### Authors &copy;
+
+- Eyoul Shimeles

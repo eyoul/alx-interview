@@ -14,8 +14,7 @@ You can assume all keys will be positive integers
 There can be keys that do not have boxes
 The first box boxes[0] is unlocked
 Return True if all boxes can be opened, else return False
-```
-``
+```powershell
 carrie@ubuntu:~/0x01-lockboxes$ cat main_0.py
 #!/usr/bin/python3
 
@@ -29,15 +28,16 @@ print(canUnlockAll(boxes))
 
 boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
 print(canUnlockAll(boxes))
-``
 ```
-```
-``
+```powershell
 carrie@ubuntu:~/0x01-lockboxes$
 carrie@ubuntu:~/0x01-lockboxes$ ./main_0.py
 True
 True
 False
 carrie@ubuntu:~/0x01-lockboxes$
-``
 ```
+* File: [0-lockboxes.py](./0-lockboxes.py)
+### Authors &copy;
+
+- Eyoul Shimeles

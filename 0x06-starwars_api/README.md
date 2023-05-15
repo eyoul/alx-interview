@@ -64,4 +64,8 @@ Nien Nunb
 Bib Fortuna
 alexa@ubuntu:~/0x06$ 
 ```
-### [0-starwars_characters.js](./0-starwars_characters.js)
+* [0-starwars_characters.js](./0-starwars_characters.js)
+
+### Authors &copy;
+
+- Eyoul Shimeles

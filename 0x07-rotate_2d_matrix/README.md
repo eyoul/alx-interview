@@ -45,3 +45,7 @@ jessevhedden$ ./main_0.py
 jessevhedden$
 ```
 * File: [0-rotate_2d_matrix.py](./0-rotate_2d_matrix.py)
+
+### Authors &copy;
+
+- Eyoul Shimeles

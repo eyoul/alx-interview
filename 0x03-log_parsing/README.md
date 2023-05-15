@@ -13,8 +13,7 @@ Write a script that reads stdin line by line and computes metrics:
         * format: <status code>: <number>
         * status codes should be printed in ascending order
 Warning: In this sample, you will have random value - it’s normal to not have the same output as this one.
-```
-``
+```powershell
 alexa@ubuntu:~/0x03-log_parsing$ cat 0-generator.py
 #!/usr/bin/python3
 import random
@@ -76,5 +75,9 @@ KeyboardInterrupt
     sleep(random.random())
 KeyboardInterrupt
 alexa@ubuntu:~/0x03-log_parsing$ 
-``
 ```
+* File: [0-stats.py](./0-stats.py)
+
+### Authors &copy;
+
+- Eyoul Shimeles
