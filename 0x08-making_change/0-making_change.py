@@ -10,12 +10,29 @@ def makeChange(coins, total):
     """
     if total <= 0:
         return 0
-    min_coins = [float('inf')] * (total + 1)
-    min_coins[0] = 0
-    for i in range(1, total + 1):
-        for j in range(len(coins)):
-            if coins[j] <= i:
-                sub_res = min_coins[i - coins[j]]
-                if sub_res != float('inf'):
-                    min_coins[i] = min(min_coins[i], sub_res + 1)
-    return -1 if min_coins[total] == float('inf') else min_coins[total]
+    if coins == [] or coins is None:
+        return -1
+    try:
+        n = coins.index(total)
+        return 1
+    except ValueError:
+        pass
+
+    coins.sort(reverse=True)
+    min_coins = 0
+    for i in coins:
+        if total % i == 0:
+            min_coins += int(total / i)
+            return min_coins
+        if total - i >= 0:
+            if int(total / i) > 1:
+                min_coins += int(total / i)
+                total = total % i  
+            else:
+                min_coins +=1
+                total -= i
+                if total == 0:
+                    break
+    if total > 0:
+        return -1
+    return min_coins
