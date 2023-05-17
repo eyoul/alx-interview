@@ -6,7 +6,9 @@ def makeChange(coins, total):
     """
     Make change coins and total
     """
-    if total <= 0:
+    if total < 0:
+        return 0
+    if total == 0:
         return 0
     min_coins = [float('inf')] * (total + 1)
     min_coins[0] = 0
